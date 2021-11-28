@@ -1,0 +1,44 @@
+# IDE specific
+**/.vscode
+**/.idea
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.j
+
+# testing
+/coverage
+/cypress
+/storybook-static
+
+# next.js
+/.next/
+/out
+
+# production
+/build
+/dist
+yarn.lock
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log
+
+
+# production
+/build
+
+# local env files
+.env
+.env.sample
+
+yarn.lock
+.prettierignore
+.gitignore
+CHANGELOG.md
+deploy
+*.md
+*.mdx
+next-env.d.ts

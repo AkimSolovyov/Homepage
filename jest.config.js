@@ -1,0 +1,35 @@
+module.exports = {
+  testPathIgnorePatterns: ['/.next/', '/node_modules/', '/reports/', '/dist/'],
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
+  collectCoverageFrom: [
+    '**/*.{js,ts,tsx}',
+    '!**/*.config.{js,ts,tsx}',
+    '!src/**/**/*.stories.{js,jsx,ts,tsx,mdx}',
+    '!src/**/**/*.{test,spec}.{js,jsx,ts,tsx}',
+    '!dist/**',
+    '!**/.next/**',
+    '!**/node_modules/**',
+    '!**/tests/**',
+    '!**/styles/**',
+    '!**/coverage/**',
+    '!**/constants/**',
+    '!**/types/**',
+    '!*.d.ts',
+    '!jest.config.js',
+    '!.prettierrc.js',
+    '!**/**/types.ts',
+  ],
+  transform: {
+    '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
+  },
+  coverageDirectory: './reports/coverage/',
+  reporters: ['default'],
+  globals: {
+    'ts-jest': {
+      isolatedModules: true,
+    },
+  },
+  testTimeout: 100000,
+}

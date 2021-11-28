@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "sourceMap": true,
+    "checkJs": false,
+    "removeComments": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "pretty": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "rootDir": "./",
+    "baseUrl": ".",
+    "noFallthroughCasesInSwitch": true,
+    "types": [
+      "node",
+      "jest",
+      "@testing-library/jest-dom"
+    ],
+    "incremental": true
+  },
+  "include": [
+    "./src/**/*",
+    "./__mocks__/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./src/mdx.d.ts"
+  ]
+}
